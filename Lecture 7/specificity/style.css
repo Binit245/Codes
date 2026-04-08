@@ -1,0 +1,28 @@
+/* id */
+#sam{
+    color: red;
+}
+
+/* class */
+.samai{
+    color: pink;
+}
+
+/* element */
+div{
+    color: greenyellow;
+}
+
+/* Inheritence */
+
+ol{
+    font-size: 30px;
+    color: cyan;
+    border: 2px solid black;
+}
+
+ol>li{
+    color: red;
+    font-size: 40px;
+    border: 3px solid black;
+}

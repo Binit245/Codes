@@ -1,0 +1,34 @@
+/* child sibling selectors */
+
+/* section>div>p{
+    color: blue; 
+}
+
+section>section>p{
+    color: green;  
+}
+
+section>section>div>p{
+    color: red;  
+} */
+
+/* adjacent sibling selector */
+
+/* article+section{
+    background-color : yellowgreen;
+} */
+
+/* section+article{
+    background-color : lightcoral;
+} */
+
+/* general sibling selector */
+
+/* article~section{
+    border: 5px solid purple;
+} */
+
+/* section~article{
+    border: 5px solid orange;
+} */
+

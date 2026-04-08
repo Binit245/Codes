@@ -1,0 +1,28 @@
+section div p{
+    color: aqua;  /* works */
+} 
+
+section article p{
+    color: brown;  /* wont works */
+}
+
+section article div p{
+    color: coral;  /* works */
+}
+
+article section div p{
+    color: darkorange;  /* wont works */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

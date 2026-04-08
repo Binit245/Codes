@@ -1,0 +1,72 @@
+/* element selector */
+/*
+div{
+    border: 3px solid black;
+}
+
+p{
+    font-size: 20px;
+} */
+
+
+/* ID selector */
+
+/* #sam{
+    background-color: bisque;
+}
+
+#speical{
+    font-size: 30px;
+} */
+
+/* class selector */
+
+/* .sachin{
+    background-color: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+/* attribute selector*/
+
+/* a[href="http://google.com"]{
+    font-size: 40px;
+    background-color: blueviolet;
+} */
+
+/* input[type="text"]{
+    border: 3px dashed orchid;
+    background-color: lightyellow;
+} */
+
+/* input[disabled]{
+    font-size: 50px;
+    background-color: aquamarine;
+} */
+
+/*universal selector*/
+
+/* *{
+    border: 3px solid goldenrod;
+}
+
+body{
+    border: 20px solid gray;
+}
+
+usage of * 
+*{
+    margin: 0;
+    padding: 0;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
