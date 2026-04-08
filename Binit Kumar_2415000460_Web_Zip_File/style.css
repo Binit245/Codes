@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    min-height: 80px;
+}
+
+ul{
+    display: flex;
+    width: 4%;
+    align-items: center;
+    justify-content: space-between;
+}
+li{
+    color: azure;
+    list-style: none;
+
+}
+img{
+    float: right;
+    width: 300px;
+    height: 300px;
+}
+section{
+    
+}
+.down{
+    color: black;
+    background-color: aquamarine;
+}
+
+#home:hover{
+    color: paleturquoise;
+}
+#Skills:hover{
+    color: paleturquoise;
+}
+#About:hover{
+    color: paleturquoise;
+}
+#Services:hover{
+    color: paleturquoise;
+}
+#Contact:hover{
+    color: paleturquoise;
+}

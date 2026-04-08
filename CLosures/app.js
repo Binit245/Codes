@@ -1,0 +1,13 @@
+function sam(){
+    var a =c10;
+    let b = 20;
+    const c = 30;
+    function mav(){
+        console.log(a);
+        console.log(c);
+    }
+    return mav
+
+}
+var d = sam();
+d();

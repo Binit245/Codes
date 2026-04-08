@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+header("Content-Type: application/json");
+
+// Database connection
+$host = "localhost";
+$user = "root";   
+$pass = "";       
+$db   = "hrmsdb";
+
+$conn = new mysqli($host, $user, $pass, $db);
+if($conn->connect_error){
+    die(json_encode(["error" => "DB Connection Failed"]));
+}
+
+$type = $_POST['type'] ?? '';
+$lat  = $_POST['lat'] ?? 0;
+$lng  = $_POST['lng'] ?? 0;
+$min  = $_POST['min'] ?? 0;
+
+$sql = "SELECT hospital_name AS name, available_beds AS available
+        FROM hospitals
+        WHERE resource_type = ?
+        AND available_beds >= ?
+        ORDER BY ABS(latitude - ?) + ABS(longitude - ?) ASC
+        LIMIT 10";
+
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("sidd", $type, $min, $lat, $lng);
+$stmt->execute();
+$result = $stmt->get_result();
+
+$hospitals = [];
+while($row = $result->fetch_assoc()){
+    $hospitals[] = $row;
+}
+
+echo json_encode($hospitals);
+$conn->close();
+?>
+
+</body>
+</html>
